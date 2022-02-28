@@ -1,0 +1,40 @@
+/**
+This file contains various scss variables.
+ */
+$nav-width: 1920px;
+$lg-card-width: 50rem;
+$sm-card-width: 19.6rem;
+
+$max-md-width-percent: 90% /*70 or 90*/;
+$max-sm-width-percent: 100%;
+
+$content-width: 1920px;
+
+$theme-color-1: #0f444a;
+$theme-color-2: #135e63;
+$theme-color-3: #f9f2d7;
+$theme-color-4: #0f4449;
+$theme-color-5: #2dacae;
+$theme-color-6: #0a2b2e;
+$dark-green-1: #114a4f;
+$dark-orange: #ef8a57;
+
+$border-radius: 1.5rem;
+
+$text-color-1: #faecda;
+
+$heading-font-family: "Advent Pro", sans-serif;
+$small-heading-font-family: "Leckerli One", cursive;
+$oxygen-font-family: "Oxygen", sans-serif;
+$montserrat-font-family: "Montserrat", sans-serif;
+
+$button-text-color: #fae0bd;
+$button-color: #ff9966;
+$input-color: #006666;
+
+$word-list-scale-factor: 1.3;
+
+$circle-size: 7.5rem;
+
+:root {
+}

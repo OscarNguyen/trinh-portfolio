@@ -1,0 +1,50 @@
+.btn:not(.btn-link) {
+  font-family: $heading-font-family;
+  text-transform: uppercase;
+  font-weight: 700;
+  -moz-font-weight: 700;
+  -webkit-font-weight: 700;
+  letter-spacing: 0.045rem !important;
+  font-size: 1.125rem !important;
+
+  &,
+  &:focus,
+  &:active {
+    box-shadow: 0 0 0.2rem 0.05rem rgba(0, 0, 0, 0.1);
+  }
+
+  padding: 1rem 2rem;
+  background: #eee;
+
+  border: none;
+  border-radius: $border-radius;
+
+  font-size: 1rem;
+  line-height: 1;
+  color: #fff;
+
+  white-space: nowrap;
+
+  transition: transform 0.15s ease-out, background-color 0.25s ease-out,
+    color 0.35s ease-in;
+
+  &.btn-primary {
+    background: $theme-color-1;
+    color: $button-text-color;
+
+    @include zoom-effect($theme-color-6);
+  }
+
+  &.btn-orange {
+    background: $button-color;
+
+    color: $theme-color-4;
+    font-family: $oxygen-font-family;
+    font-weight: bold;
+
+    min-width: 13rem;
+    min-height: 3.1rem;
+
+    @include zoom-effect($dark-orange);
+  }
+}
