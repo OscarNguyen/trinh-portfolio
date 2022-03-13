@@ -1,11 +1,11 @@
 .btn:not(.btn-link) {
   font-family: $heading-font-family;
-  text-transform: uppercase;
-  font-weight: 700;
-  -moz-font-weight: 700;
-  -webkit-font-weight: 700;
-  letter-spacing: 0.045rem !important;
-  font-size: 1.125rem !important;
+  // text-transform: uppercase;
+  font-weight: 400;
+  -moz-font-weight: 400;
+  -webkit-font-weight: 400;
+  letter-spacing: 0.0025rem !important;
+  font-size: 2.125rem !important;
 
   &,
   &:focus,
@@ -13,7 +13,7 @@
     box-shadow: 0 0 0.2rem 0.05rem rgba(0, 0, 0, 0.1);
   }
 
-  padding: 1rem 2rem;
+  padding: 1.3rem 4.25rem;
   background: #eee;
 
   border: none;
@@ -31,20 +31,21 @@
   &.btn-primary {
     background: $theme-color-1;
     color: $button-text-color;
+    line-height: 2.5rem;
 
     @include zoom-effect($theme-color-6);
   }
 
-  &.btn-orange {
-    background: $button-color;
+  // &.btn-orange {
+  //   background: $button-color;
 
-    color: $theme-color-4;
-    font-family: $oxygen-font-family;
-    font-weight: bold;
+  //   color: $theme-color-4;
+  //   font-family: $oxygen-font-family;
+  //   font-weight: bold;
 
-    min-width: 13rem;
-    min-height: 3.1rem;
+  //   min-width: 13rem;
+  //   min-height: 3.1rem;
 
-    @include zoom-effect($dark-orange);
-  }
+  //   @include zoom-effect($dark-orange);
+  // }
 }

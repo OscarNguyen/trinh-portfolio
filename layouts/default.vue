@@ -75,6 +75,15 @@ body,
     }
   }
 
+  .trinh-link{
+    color:inherit;
+    text-decoration: none;
+
+    @include a-all-selectors{
+      box-shadow: 0px 3px 0 0 #005180
+    }
+  }
+
   // .dark-green-placeholder {
   //   ::placeholder {
   //     color: $dark-green-1;
@@ -139,6 +148,7 @@ body,
       width: $content-width;
       max-width: 95vw;
 
+      padding: 0 2rem;
       margin: 0 auto;
     }
   }

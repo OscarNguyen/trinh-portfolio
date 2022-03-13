@@ -31,7 +31,7 @@ export default {
       { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
       {
         href:
-          'https://fonts.googleapis.com/css2?family=Advent+Pro:wght@400;500;600;700&family=DM+Sans:wght@400;500&family=Leckerli+One&family=Montserrat&family=Oleo+Script&family=Oxygen:wght@400;700&display=swap',
+          'https://fonts.googleapis.com/css2?family=Mohave:wght@400;500&family=Roboto:wght@300;400;500&display=swap',
         rel: 'stylesheet'
       },
       { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: '' }
