@@ -9,9 +9,12 @@ h1 {
 
 h2 {
   font-family: $heading-font-family;
-  font-size: 2.5rem;
-  font-weight: 700;
-  line-height: 2.125rem;
+  font-size: 2.125rem;
+  font-weight: 500;
+  line-height: 2.5rem;
+  color: $theme-color-1;
+
+  margin-bottom: 0;
 
   @include media-breakpoint-down(sm) {
     font-size: 1.5rem;
@@ -45,7 +48,7 @@ h5 {
 
 p {
   // line-height: 2.2rem;
-  font-size: 1.25rem;
+  font-size: 1rem;
   font-weight: 400;
   font-family: $roboto-font-family;
   color: #000;
