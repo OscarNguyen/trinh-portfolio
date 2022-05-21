@@ -1,5 +1,5 @@
 <template>
-  <nav class="main-navigation">
+  <nav class="main-navigation" :class="{shrink: isShrunk}">
     <div class="page-container">
       <div class="logo left">
         <img src="/images/logos/Logo_Trinh_Dinh_1.png" alt="">
@@ -32,7 +32,21 @@
 
 <script>
 export default {
+  data () {
+    return {
+      isShrunk: false
+    }
+  },
 
+  mounted () {
+    document.addEventListener('scroll', () => {
+      if (window.scrollY < 20) {
+        this.isShrunk = false
+      } else {
+        this.isShrunk = true
+      }
+    })
+  }
 }
 </script>
 
@@ -41,6 +55,18 @@ export default {
   padding: 3.4rem 0;
 
   box-shadow:  0 1px 5px -1px #333;
+
+  transition: padding .3s;
+
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background:#fff;
+
+  &.shrink{
+    padding: 1rem 0
+  }
 
   .page-container{
     display: flex;

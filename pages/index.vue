@@ -151,6 +151,7 @@ export default {
   // .page-container{
   //   display: flex
   // }
+  margin-top: 10rem;
 
   .abstract-img{
       position: absolute;

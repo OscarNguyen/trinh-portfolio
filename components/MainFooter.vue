@@ -115,6 +115,7 @@ export default {
         color: #fff;
         opacity: .8;
         text-align: center;
+        font-size: .75rem;
 
         display: block;
 
