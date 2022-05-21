@@ -9,7 +9,7 @@
     </div>
 
     <div class="layout-bottom">
-      <footer />
+      <main-footer />
     </div>
   </div>
 </template>
