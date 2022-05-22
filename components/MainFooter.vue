@@ -39,10 +39,6 @@ export default {
         },
         {
           to: '/',
-          text: 'Home'
-        },
-        {
-          to: '/',
           text: 'Illustration'
         },
         {

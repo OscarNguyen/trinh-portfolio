@@ -2,7 +2,9 @@
   <nav class="main-navigation" :class="{shrink: isShrunk}">
     <div class="page-container">
       <div class="logo left">
-        <img src="/images/logos/Logo_Trinh_Dinh_1.png" alt="">
+        <nuxt-link to="/">
+          <img src="/images/logos/Logo_Trinh_Dinh_1.png" alt="">
+        </nuxt-link>
       </div>
       <div class="right">
         <div class="link-item">
