@@ -1,5 +1,8 @@
 <template>
   <div class="main-footer">
+    <div class="abstract-bot-img">
+      <img src="/images/Abstract_background_4_2.png" alt="">
+    </div>
     <div class="page-container">
       <div class="internal-links d-flex justify-content-center">
         <div v-for="link of internalLinks" :key="link.text" class="link-item">
@@ -80,8 +83,19 @@ export default {
 
   font-family: Helvetica, sans-serif ;
 
-  position: relative;
+  // position: relative;
   z-index: 1;
+
+  .abstract-bot-img{
+    position: absolute;
+    bottom: 0rem;
+    right: 31%;
+    z-index: -1;
+
+    transform: rotate(180deg) scale(0.8);
+
+    width: 31rem;
+  }
 
   .page-container {
     .internal-links{

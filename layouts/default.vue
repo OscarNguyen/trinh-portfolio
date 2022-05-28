@@ -79,8 +79,8 @@ body,
     color:inherit;
     text-decoration: none;
 
-    @include a-all-selectors{
-      box-shadow: 0px 3px 0 0 #005180
+    @include a-all-selectors {
+        box-shadow: 0px 3px 0 0 #005180
     }
   }
 

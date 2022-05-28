@@ -22,9 +22,6 @@
         <div class="stone-grass-img">
           <img src="/images/stone-and-grass.png" alt="">
         </div>
-        <div class="abstract-bot-img">
-          <img src="/images/Abstract_background_4_2.png" alt="">
-        </div>
       </div>
     </div>
   </div>
@@ -40,7 +37,7 @@ export default {
 .contact{
   margin-top: $default-margin-top;
 
-  height: 100%;
+  height: 62vh;
 
   overflow: hidden;
 
@@ -108,11 +105,6 @@ export default {
           right: 13rem;
         }
 
-        &.abstract-bot-img{
-          bottom: -34rem;
-          z-index: 0;
-          transform: rotate(180deg);
-        }
       }
     }
   }
