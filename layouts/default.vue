@@ -125,6 +125,8 @@ body,
 
     z-index: 0;
 
+    // overflow: hidden;
+
     // .oot-card {
     //   background: $text-color-1 0% 0% no-repeat padding-box;
 
@@ -151,6 +153,10 @@ body,
       padding: 0 2rem;
       margin: 0 auto;
     }
+  }
+
+  .layout-bottom{
+    // padding-top: 5rem;
   }
 
   // Nuxt page transition classes.

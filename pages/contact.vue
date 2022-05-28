@@ -6,7 +6,26 @@
         <p>Fill out the form</p>
         <ContactForm />
       </div>
-      <div class="right" />
+      <div class="right">
+        <div class="abstract-top-img">
+          <img src="/images/Abstract_background_4_2.png" alt="">
+        </div>
+        <div class="mail-img">
+          <img src="/images/mail.png" alt="">
+        </div>
+        <div class="mailbox-img">
+          <img src="/images/mail-box.png" alt="">
+        </div>
+        <div class="plane-img">
+          <img src="/images/plane.png" alt="">
+        </div>
+        <div class="stone-grass-img">
+          <img src="/images/stone-and-grass.png" alt="">
+        </div>
+        <div class="abstract-bot-img">
+          <img src="/images/Abstract_background_4_2.png" alt="">
+        </div>
+      </div>
     </div>
   </div>
 </template>
@@ -21,9 +40,13 @@ export default {
 .contact{
   margin-top: $default-margin-top;
 
+  height: 100%;
+
+  overflow: hidden;
+
   .page-container{
     .left{
-      width: 40%;
+      width: 50%;
 
       h1{
         font-family: $heading-font-family;
@@ -42,6 +65,55 @@ export default {
         font-size: 1.25rem;
       }
 
+    }
+
+    .right{
+      position: relative;
+
+      width:50%;
+
+      & > div{
+        position: absolute;
+
+        width: 31rem;
+
+        img{
+          max-width: 100%;
+        }
+
+        &.abstract-top-img{
+          right: -15rem;
+          top: -5rem;
+        }
+
+        &.mail-img{
+          bottom: 25rem;
+          right: 13rem;
+          z-index: 1;
+        }
+
+        &.mailbox-img{
+          bottom: 9rem;
+          right: 13rem;
+          z-index: 0;
+        }
+
+        &.plane-img{
+          bottom: 14.5rem;
+          right: 0;
+        }
+
+        &.stone-grass-img{
+          bottom: 4rem;
+          right: 13rem;
+        }
+
+        &.abstract-bot-img{
+          bottom: -34rem;
+          z-index: 0;
+          transform: rotate(180deg);
+        }
+      }
     }
   }
 }

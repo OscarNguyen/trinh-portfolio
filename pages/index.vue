@@ -153,6 +153,8 @@ export default {
   // }
   margin-top: $default-margin-top;
 
+  overflow : hidden;
+
   .abstract-img{
       position: absolute;
       z-index: -1;
@@ -377,6 +379,7 @@ export default {
     .page-container{
       .skills{
         margin-top: 1.875rem;
+        margin-bottom: 5rem;
 
         .skill{
           width: 32%;

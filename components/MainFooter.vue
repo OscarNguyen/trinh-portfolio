@@ -46,7 +46,7 @@ export default {
           text: 'Resume'
         },
         {
-          to: '/',
+          to: '/contact',
           text: 'Contact'
         }
       ],
@@ -75,10 +75,13 @@ export default {
 .main-footer {
   background-color:#005180;
 
-  margin-top: 5rem;
+  // margin-top: 5rem;
   padding: 6.5rem 31rem;
 
   font-family: Helvetica, sans-serif ;
+
+  position: relative;
+  z-index: 1;
 
   .page-container {
     .internal-links{
