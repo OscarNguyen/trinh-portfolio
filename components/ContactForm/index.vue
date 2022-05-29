@@ -1,10 +1,17 @@
 <template>
-  <b-form class="contact-form">
-    <ContactFormInputGroup placeholder="Name" input-id="fullName" label="Full Name" :multiline="false" />
-    <ContactFormInputGroup placeholder="Email" input-type="email" input-id="email" label="Email" :multiline="false" />
-    <ContactFormInputGroup placeholder="Text" input-id="messages" label="Messages" :multiline="true" />
+  <b-form class="contact-form" @submit.prevent="onSubmit">
+    <ContactFormInputGroup placeholder="Name" input-id="fullName" label="Full Name" :multiline="false" @onGetValue="getInputValues" />
+    <ContactFormInputGroup
+      placeholder="Email"
+      input-type="email"
+      input-id="email"
+      label="Email"
+      :multiline="false"
+      @onGetValue="getInputValues"
+    />
+    <ContactFormInputGroup placeholder="Text" input-id="messages" label="Messages" :multiline="true" @onGetValue="getInputValues" />
     <div class="submit-btn-container">
-      <b-button class="btn btn-primary">
+      <b-button type="submit" class="btn btn-primary">
         Submit
       </b-button>
     </div>
@@ -13,7 +20,24 @@
 
 <script>
 export default {
+  data () {
+    return {
+      inputData: {}
+    }
+  },
 
+  methods: {
+    async onSubmit () {
+      console.log(this.inputData)
+      const res = await this.$axios.$post('https://formspree.io/f/xyyoonaj', this.inputData)
+
+      this.$emit('onGetSubmissionStatus', res)
+    },
+
+    getInputValues (object) {
+      this.inputData = { ...this.inputData, ...object }
+    }
+  }
 }
 </script>
 

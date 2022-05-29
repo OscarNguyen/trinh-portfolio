@@ -2,10 +2,18 @@
   <div class="contact">
     <div class="page-container d-flex">
       <div class="left">
-        <h1>Get in touch</h1>
-        <p>Fill out the form</p>
-        <ContactForm />
+        <template v-if="!isSubmissionOK">
+          <h1>Get in touch</h1>
+          <p>Fill out the form</p>
+          <ContactForm @onGetSubmissionStatus="getSubmissionStatus" />
+        </template>
+        <template v-else>
+          <h1 class="thanks">
+            Thank you
+          </h1>
+        </template>
       </div>
+
       <div class="right">
         <div class="abstract-top-img">
           <img src="/images/Abstract_background_4_2.png" alt="">
@@ -29,7 +37,16 @@
 
 <script>
 export default {
-
+  data () {
+    return {
+      isSubmissionOK: false
+    }
+  },
+  methods: {
+    getSubmissionStatus (object) {
+      this.isSubmissionOK = object.ok
+    }
+  }
 }
 </script>
 
@@ -44,6 +61,12 @@ export default {
   .page-container{
     .left{
       width: 50%;
+
+      align-self: center;
+
+      .thanks{
+        text-align: center;
+      }
 
       h1{
         font-family: $heading-font-family;
@@ -68,6 +91,7 @@ export default {
       position: relative;
 
       width:50%;
+      height: 56.5vh;
 
       & > div{
         position: absolute;

@@ -97,11 +97,11 @@ export default {
         align-self: center;
 
         &:first-child{
-               padding-left: 0 ;
+          padding-left: 0 ;
         }
 
         &:last-child{
-               padding-right: 2rem;
+          padding-right: 2rem;
         }
       }
     }

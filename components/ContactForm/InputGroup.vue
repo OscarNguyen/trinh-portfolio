@@ -11,9 +11,19 @@
       :placeholder="placeholder"
       rows="5"
       no-resize
+      :name="inputId"
+      required
     />
 
-    <b-form-input v-else :id="inputId" v-model="value" :placeholder="placeholder" :type="inputType" />
+    <b-form-input
+      v-else
+      :id="inputId"
+      v-model="value"
+      :name="inputId"
+      :placeholder="placeholder"
+      :type="inputType"
+      required
+    />
   </b-form-group>
 </template>
 
@@ -45,9 +55,16 @@ export default {
       required: true
     }
   },
+
   data () {
     return {
       value: null
+    }
+  },
+
+  watch: {
+    value (newVal, oldVal) {
+      this.$emit('onGetValue', { [this.inputId]: this.value })
     }
   }
 }
