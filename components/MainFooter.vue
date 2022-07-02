@@ -1,12 +1,12 @@
 <template>
   <div class="main-footer">
-    <div class="abstract-bot-img">
+    <div v-if="isContactPage" class="abstract-bot-img">
       <img src="/images/Abstract_background_4_2.png" alt="">
     </div>
     <div class="page-container">
       <div class="internal-links d-flex justify-content-center">
         <div v-for="link of internalLinks" :key="link.text" class="link-item">
-          <nuxt-link class="" :to="link.to">
+          <nuxt-link :to="link.to">
             {{ link.text }}
           </nuxt-link>
         </div>
@@ -37,15 +37,15 @@ export default {
           text: 'Home'
         },
         {
-          to: '/',
+          to: '/project',
           text: 'Project'
         },
         {
-          to: '/',
+          to: '/illustration',
           text: 'Illustration'
         },
         {
-          to: '/',
+          to: '/resume',
           text: 'Resume'
         },
         {
@@ -53,6 +53,7 @@ export default {
           text: 'Contact'
         }
       ],
+
       externalLinks: [
         {
           to: '/',
@@ -69,12 +70,21 @@ export default {
       ]
 
     }
+  },
+  computed: {
+    isContactPage () {
+      return this.$route.path.includes('/contact')
+    }
+  },
+  mounted () {
+    console.log(this.$route)
   }
-
 }
 </script>
 
 <style lang="scss" scoped>
+@import "../assets/scss/_extends.scss";
+
 .main-footer {
   background-color:#005180;
 
@@ -107,10 +117,13 @@ export default {
           text-decoration: none;
           color:#fff;
 
-    @include a-all-selectors{
-      box-shadow: 0px 1px 0 0 #fff
+          &.nuxt-link-exact-active{
+            @extend .white-hover-link;
+          }
 
-    }
+          @include a-all-selectors{
+            @extend .white-hover-link;
+          }
         }
       }
     }

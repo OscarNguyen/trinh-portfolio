@@ -34,6 +34,7 @@ export default {
 @import "../assets/scss/_typography";
 @import "../assets/scss/_buttons";
 @import "../assets/scss/_cookie-consent";
+@import "../assets/scss/_extends.scss";
 
 $home-icon-size: 4rem;
 
@@ -75,12 +76,16 @@ body,
     }
   }
 
+  // .hover-link{
+  //   box-shadow: 0px 3px 0 0 #005180
+  // }
+
   .trinh-link{
     color:inherit;
     text-decoration: none;
 
     @include a-all-selectors {
-        box-shadow: 0px 3px 0 0 #005180
+      @extend .blue-hover-link;
     }
   }
 

@@ -53,6 +53,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "../assets/scss/_extends.scss";
+
 .main-navigation{
   padding: 3.4rem 0;
 
@@ -95,6 +97,10 @@ export default {
         text-transform: uppercase;
 
         align-self: center;
+
+        .nuxt-link-exact-active{
+          @extend .blue-hover-link ;
+        }
 
         &:first-child{
           padding-left: 0 ;

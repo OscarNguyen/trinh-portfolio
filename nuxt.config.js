@@ -54,6 +54,7 @@ export default {
       'bootstrap/scss/_functions.scss',
       'bootstrap/scss/_variables.scss',
       'bootstrap/scss/_mixins.scss',
+      'bootstrap/scss/_extends.scss',
 
       // Include our own variables and mixins, etc.
       '~/assets/scss/_variables.scss',

@@ -51,8 +51,10 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "../assets/scss/_extends.scss";
+
 .contact{
-  margin-top: $default-margin-top;
+  @extend .default-page-margin-top;
 
   height: 62vh;
 
