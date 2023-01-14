@@ -1,0 +1,14 @@
+'sol-music':
+  title: 'sol music'
+  description: 'casdasd'
+  name: 'sol-music'
+  imgSrc: /images/project/sol-music/sol-music.png
+  logo: /images/project/sol-music/logo.png 
+
+'vaccine':
+  title: 'vaccine'
+  description: 'casdasd'
+  name: 'vaccine'
+  imgSrc: /images/project/vaccine/vaccine.png 
+  logo: /images/project/vaccine/logo.png 
+
