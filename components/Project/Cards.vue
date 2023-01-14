@@ -10,33 +10,38 @@ export default {
     return {
       projectList: [
         {
-          imgSrc: '/images/project/project-cards/Bridge_1.png',
+          imgSrc: '/images/project/project-cards/sol-music.png',
           title: 'sol music',
-          description: 'casdasd'
+          description: 'casdasd',
+          name: 'sol-music'
         },
 
         {
-          imgSrc: '/images/project/project-cards/Bridge_2.png',
+          imgSrc: '/images/project/project-cards/vaccine.png',
           title: 'vaccine',
-          description: 'casdasd'
+          description: 'casdasd',
+          name: 'vaccine'
         },
 
         {
-          imgSrc: '/images/project/project-cards/Bridge_3.png',
-          title: 'brideg 3',
-          description: 'casdasd'
+          imgSrc: '/images/project/project-cards/bridge-3.png',
+          title: 'bridge 3',
+          description: 'casdasd',
+          name: 'bridge-3'
         },
 
         {
-          imgSrc: '/images/project/project-cards/Bridge_4.png',
+          imgSrc: '/images/project/project-cards/bridge-4.png',
           title: 'bridge 4',
-          description: 'casdasd'
+          description: 'casdasd',
+          name: 'bridge-4'
         },
 
         {
-          imgSrc: '/images/project/project-cards/Bridge_5.png',
+          imgSrc: '/images/project/project-cards/bridge-5.png',
           title: 'bridge 5',
-          description: 'casdasd'
+          description: 'casdasd',
+          name: 'bridge-5'
         }
       ]
     }
