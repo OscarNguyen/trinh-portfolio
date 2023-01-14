@@ -1,14 +1,16 @@
 <template>
   <b-container fluid="md" class="project-card">
-    <div class="profile-picture">
-      <img :src="project.imgSrc" alt="">
-      <div class="hover-background" />
-    </div>
+    <nuxt-link :to="{path:`/project/${project.name}`}">
+      <div class="profile-picture">
+        <img :src="project.imgSrc" alt="">
+        <div class="hover-background" />
+      </div>
 
-    <div class="overlay">
-      <h2>{{ project.title }}</h2>
-      <p>{{ project.description }}</p>
-    </div>
+      <div class="overlay">
+        <h2>{{ project.title }}</h2>
+        <p>{{ project.description }}</p>
+      </div>
+    </nuxt-link>
   </b-container>
 </template>
 
