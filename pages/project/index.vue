@@ -14,10 +14,11 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "../assets/scss/_extends.scss";
+@import "../../assets/scss/_extends.scss";
 
 .project {
   @extend .default-page-margin-top;
+
   .page-container{
     h1{
       font-weight: 500;
