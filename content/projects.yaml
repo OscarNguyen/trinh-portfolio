@@ -1,9 +1,10 @@
 'sol-music':
   title: 'sol music'
-  description: 'casdasd'
+  description: 'Find your music network?'
   name: 'sol-music'
   imgSrc: /images/project/sol-music/sol-music.png
   logo: /images/project/sol-music/logo.png 
+  heroImg: /images/project/sol-music/hero-img.png 
 
 'vaccine':
   title: 'vaccine'
@@ -11,4 +12,29 @@
   name: 'vaccine'
   imgSrc: /images/project/vaccine/vaccine.png 
   logo: /images/project/vaccine/logo.png 
+  heroImg:
+
+'bridge 3':
+  title: 'bridge 3'
+  description: 'casdasd'
+  name: 'bridge 3'
+  imgSrc: /images/project/project-cards/bridge-3.png 
+  logo:
+  heroImg:
+
+'bridge 4':
+  title: 'bridge 4'
+  description: 'casdasd'
+  name: 'bridge 4'
+  imgSrc: /images/project/project-cards/bridge-4.png 
+  logo:
+  heroImg:
+
+'bridge 5':
+  title: 'bridge 5'
+  description: 'casdasd'
+  name: 'bridge 5'
+  imgSrc: /images/project/project-cards/bridge-5.png 
+  logo:
+  heroImg:
 

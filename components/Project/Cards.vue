@@ -1,6 +1,6 @@
 <template>
   <div class="project-cards d-flex flex-wrap justify-content-between">
-    <ProjectCard v-for="project of projectList" :key="project.title" :project="project" />
+    <ProjectCard v-for="project of propjectCardsList" :key="project.title" :project="project" />
   </div>
 </template>
 
@@ -8,49 +8,26 @@
 export default {
   data () {
     return {
-      projectList: [
-        {
-          imgSrc: '/images/project/project-cards/sol-music.png',
-          title: 'sol music',
-          description: 'casdasd',
-          name: 'sol-music'
-        },
+      propjectCardsList: []
+    }
+  },
 
-        {
-          imgSrc: '/images/project/project-cards/vaccine.png',
-          title: 'vaccine',
-          description: 'casdasd',
-          name: 'vaccine'
-        },
+  async fetch () {
+    const content = await this.$content('projects').fetch()
 
-        {
-          imgSrc: '/images/project/project-cards/bridge-3.png',
-          title: 'bridge 3',
-          description: 'casdasd',
-          name: 'bridge-3'
-        },
-
-        {
-          imgSrc: '/images/project/project-cards/bridge-4.png',
-          title: 'bridge 4',
-          description: 'casdasd',
-          name: 'bridge-4'
-        },
-
-        {
-          imgSrc: '/images/project/project-cards/bridge-5.png',
-          title: 'bridge 5',
-          description: 'casdasd',
-          name: 'bridge-5'
-        }
-      ]
+    for (const key in content) {
+      if (key !== 'createdAt' && key !== 'dir' && key !== 'extension' && key !== 'path' && key !== 'slug' && key !== 'updatedAt') { this.propjectCardsList.push(content[key]) }
     }
   }
 }
 </script>
 
 <style lang="scss" scoped>
+@import "../../assets/scss/_extends.scss";
+
 .project-cards{
-  margin-bottom: 5.625rem;
+  @extend .width-80;
+
+  margin: 0 auto 5.625rem;
 }
 </style>
